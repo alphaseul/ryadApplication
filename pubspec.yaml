@@ -28,7 +28,7 @@ dependencies:
   modal_bottom_sheet: ^1.0.0+1
   url_launcher: ^5.7.10
   bloc: ^6.1.0
-  equatable: ^1.2.3
+  equatable: ^1.2.5
   flutter_bloc: ^6.1.0
   font_awesome_flutter: ^8.4.0
   formz: ^0.3.0
