@@ -1,0 +1,39 @@
+{
+  "project_info": {
+    "project_number": "802815833435",
+    "project_id": "ryadapplication",
+    "storage_bucket": "ryadapplication.appspot.com"
+  },
+  "client": [
+    {
+      "client_info": {
+        "mobilesdk_app_id": "1:802815833435:android:8b3b80a46555e4f151167e",
+        "android_client_info": {
+          "package_name": "com.ryad.ryadapplication"
+        }
+      },
+      "oauth_client": [
+        {
+          "client_id": "802815833435-mft9odrkf23h3ugvu0snoob159v8so9a.apps.googleusercontent.com",
+          "client_type": 3
+        }
+      ],
+      "api_key": [
+        {
+          "current_key": "AIzaSyC98Mdm1uf8C-YrdDONS6O5TyFrFtJVw1E"
+        }
+      ],
+      "services": {
+        "appinvite_service": {
+          "other_platform_oauth_client": [
+            {
+              "client_id": "802815833435-mft9odrkf23h3ugvu0snoob159v8so9a.apps.googleusercontent.com",
+              "client_type": 3
+            }
+          ]
+        }
+      }
+    }
+  ],
+  "configuration_version": "1"
+}

@@ -9,10 +9,6 @@ class _HomeState extends State<Home> {
   @override
   Widget build(BuildContext context) {
     return Scaffold(
-      appBar: AppBar(
-        title: const Text('Coach Sportif'),
-        backgroundColor: Colors.amber[800],
-      ),
       body: Container(
           child: GridView.count(
         primary: false,

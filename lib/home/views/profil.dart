@@ -1,6 +1,8 @@
 import 'package:cupertino_date_textbox/cupertino_date_textbox.dart';
+import 'package:flutter_bloc/flutter_bloc.dart';
 import 'package:flutter/material.dart';
 import 'package:modal_bottom_sheet/modal_bottom_sheet.dart';
+import 'package:ryadapplication/authentication/authentication_bloc/authentication_bloc.dart';
 
 class Profil extends StatefulWidget {
   @override
@@ -13,17 +15,22 @@ final String imgUrl =
 class _ProfilState extends State<Profil> {
   @override
   Widget build(BuildContext context) {
+    final user = context.select((AuthenticationBloc bloc) => bloc.state.user);
+    print(user.name);
     return Scaffold(
         body: SafeArea(
       child: Center(
         child: Column(
-          children: [
+          children: <Widget>[
+            SizedBox(
+              height: 25,
+            ),
             CircleAvatar(radius: 40, backgroundImage: NetworkImage(imgUrl)),
             SizedBox(
               height: 25.0,
             ),
             Text(
-              'User name',
+              user.email,
               style: new TextStyle(
                   fontWeight: FontWeight.bold,
                   fontSize: 30,

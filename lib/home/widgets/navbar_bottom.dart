@@ -1,8 +1,8 @@
 import 'package:flutter/material.dart';
 
-import 'Home.dart';
-import 'Profil.dart';
-import 'Videos.dart';
+import '../views/home.dart';
+import '../views/profil.dart';
+import '../views/Videos.dart';
 
 class NavbarBottom extends StatefulWidget {
   NavbarBottom({Key key}) : super(key: key);
