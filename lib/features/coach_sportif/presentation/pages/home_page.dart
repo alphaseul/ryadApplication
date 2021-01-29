@@ -10,8 +10,10 @@ class _HomeState extends State<Home> {
   Widget build(BuildContext context) {
     return Scaffold(
       appBar: AppBar(
-        title: const Text('Coach Sportif'),
-        backgroundColor: Colors.amber[800],
+        title: Text(
+          'Coach Sportif',
+          style: Theme.of(context).textTheme.headline1,
+        ),
       ),
       body: Container(
           child: GridView.count(

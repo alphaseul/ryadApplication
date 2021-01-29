@@ -1,14 +1,16 @@
 import 'package:cupertino_date_textbox/cupertino_date_textbox.dart';
 import 'package:flutter/material.dart';
 import 'package:modal_bottom_sheet/modal_bottom_sheet.dart';
+import 'package:provider/provider.dart';
+
+import '../../data/models/AuthService.dart';
 
 class Profil extends StatefulWidget {
   @override
   _ProfilState createState() => _ProfilState();
 }
 
-final String imgUrl =
-    'https://pixel.nymag.com/imgs/daily/selectall/2017/12/26/26-eric-schmidt.w700.h700.jpg';
+final String imgUrl = '';
 
 class _ProfilState extends State<Profil> {
   @override
@@ -93,6 +95,38 @@ class _ProfilState extends State<Profil> {
             ),
             SizedBox(
               height: (50),
+            ),
+            FlatButton(
+              onPressed: () {
+                showModalBottomSheet(
+                  context: context,
+                  builder: (context) => Container(
+                    height: 200,
+                    child: Center(
+                      child: FlatButton(
+                        onPressed: () async {
+                          var result =
+                              await Provider.of<AuthService>(context).logout();
+                          Navigator.pop(context);
+                          if (result != null) {
+                          } else {
+                            return print("deconnexion");
+                          }
+                        },
+                        color: Colors.orange[500],
+                        child: Text("Deconnexion"),
+                      ),
+                    ),
+                  ),
+                );
+              },
+              color: Colors.white,
+              child: Text("PARAMETRES"),
+              shape: RoundedRectangleBorder(
+                  borderRadius: BorderRadius.circular(18.0),
+                  side: BorderSide(
+                    color: Colors.amber[800],
+                  )),
             ),
           ],
         ),

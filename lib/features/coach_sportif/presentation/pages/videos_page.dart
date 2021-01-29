@@ -5,23 +5,17 @@ class Videos extends StatelessWidget {
   Widget build(BuildContext context) {
     return Scaffold(
       appBar: AppBar(
-        actions: <Widget>[
-          Expanded(
-              child: Row(
-            children: [
-              Icon(Icons.search_rounded),
-              Expanded(
-                child: TextField(
-                  decoration: InputDecoration(
-                    border: InputBorder.none,
-                    hintText: 'Search',
-                  ),
-                ),
+        centerTitle: true,
+        title: TextField(
+          decoration: InputDecoration(
+              hintText: 'Search',
+              suffixIcon: Icon(
+                Icons.search,
+                color: Colors.orange[800],
               ),
-            ],
-          )),
-        ],
-        backgroundColor: Colors.amber[800],
+              border: InputBorder.none),
+        ),
+        backgroundColor: Colors.white,
       ),
       body: MyStatelessWidget(),
     );
