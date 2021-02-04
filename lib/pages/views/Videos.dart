@@ -1,6 +1,6 @@
 import 'package:cached_network_image/cached_network_image.dart';
 import 'package:flutter/material.dart';
-import 'package:ryadapplication/home/views/videos_player_screen.dart';
+import 'package:ryadapplication/pages/views/videos_player_screen.dart';
 import 'package:ryadapplication/models/channel_info.dart';
 import 'package:ryadapplication/models/videos_list.dart';
 import 'package:ryadapplication/utils/services.dart';

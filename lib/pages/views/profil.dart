@@ -1,8 +1,10 @@
+import 'package:cloud_firestore/cloud_firestore.dart';
 import 'package:cupertino_date_textbox/cupertino_date_textbox.dart';
 import 'package:flutter_bloc/flutter_bloc.dart';
 import 'package:flutter/material.dart';
 import 'package:modal_bottom_sheet/modal_bottom_sheet.dart';
 import 'package:ryadapplication/authentication/authentication_bloc/authentication_bloc.dart';
+import 'package:firebase_auth/firebase_auth.dart';
 
 class Profil extends StatefulWidget {
   @override
@@ -25,12 +27,14 @@ class _ProfilState extends State<Profil> {
             SizedBox(
               height: 25,
             ),
-            CircleAvatar(radius: 40, backgroundImage: NetworkImage(imgUrl)),
+            CircleAvatar(
+                radius: 40,
+                backgroundImage: NetworkImage(user.photo ?? imgUrl)),
             SizedBox(
               height: 25.0,
             ),
             Text(
-              user.email,
+              user.name ?? user.email,
               style: new TextStyle(
                   fontWeight: FontWeight.bold,
                   fontSize: 30,
@@ -144,7 +148,19 @@ class _ModalBottomState extends State<ModalBottom> {
                         'Editer votre profil',
                         style: TextStyle(color: Colors.black),
                       ),
-                      FlatButton(onPressed: () {}, child: Text("Enregister"))
+                      FlatButton(
+                          onPressed: () {
+                            var firebaseUser =
+                                FirebaseAuth.instance.currentUser;
+                            Firestore.instance
+                                .collection("users")
+                                .doc(firebaseUser.uid)
+                                .get()
+                                .then((value) {
+                              print(value.data());
+                            });
+                          },
+                          child: Text("Enregister"))
                     ],
                   ),
                 ),

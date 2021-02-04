@@ -3,7 +3,7 @@ import 'package:flutter/material.dart';
 import 'theme.dart';
 import 'package:flutter_bloc/flutter_bloc.dart';
 import 'authentication/authentication_bloc/authentication_bloc.dart';
-import 'home/home_page.dart';
+import 'pages/home_page.dart';
 import 'login/login_page.dart';
 import 'splash/splash.dart';
 

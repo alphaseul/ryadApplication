@@ -1,33 +1,41 @@
 {
   "project_info": {
-    "project_number": "802815833435",
-    "project_id": "ryadapplication",
-    "storage_bucket": "ryadapplication.appspot.com"
+    "project_number": "260633432666",
+    "project_id": "application-269a2",
+    "storage_bucket": "application-269a2.appspot.com"
   },
   "client": [
     {
       "client_info": {
-        "mobilesdk_app_id": "1:802815833435:android:8b3b80a46555e4f151167e",
+        "mobilesdk_app_id": "1:260633432666:android:a85c5bcb2860b644f57e63",
         "android_client_info": {
           "package_name": "com.ryad.ryadapplication"
         }
       },
       "oauth_client": [
         {
-          "client_id": "802815833435-mft9odrkf23h3ugvu0snoob159v8so9a.apps.googleusercontent.com",
+          "client_id": "260633432666-9sokei79gmq50bsotgqej94ntfopjv44.apps.googleusercontent.com",
+          "client_type": 1,
+          "android_info": {
+            "package_name": "com.ryad.ryadapplication",
+            "certificate_hash": "3e486a0a07c60026528b37366b357599acbe00cb"
+          }
+        },
+        {
+          "client_id": "260633432666-a8mut5oca1o2t3ckbqq9kfv4bq6u40b0.apps.googleusercontent.com",
           "client_type": 3
         }
       ],
       "api_key": [
         {
-          "current_key": "AIzaSyC98Mdm1uf8C-YrdDONS6O5TyFrFtJVw1E"
+          "current_key": "AIzaSyA3QOlNFI5y-VS9y7aWHUhnyE-AWm-L1EQ"
         }
       ],
       "services": {
         "appinvite_service": {
           "other_platform_oauth_client": [
             {
-              "client_id": "802815833435-mft9odrkf23h3ugvu0snoob159v8so9a.apps.googleusercontent.com",
+              "client_id": "260633432666-a8mut5oca1o2t3ckbqq9kfv4bq6u40b0.apps.googleusercontent.com",
               "client_type": 3
             }
           ]
